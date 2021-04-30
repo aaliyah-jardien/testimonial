@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial Slider with Owl Carousel | CSS Glassmorphism</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Set up your HTML -->
+
+    <div class="owl-carousel">
+      <div class="owl-content">
+        <img
+          class="img-area"
+          src="https://picsum.photos/200?random=1"
+          alt="photos"
+          style="width: 150px; height: 150px"
+        />
+        <div class="owl-items">
+          <h2 class="heading">Person 1</h2>
+          <h3 class="heading">Title</h3>
+          <q
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+            dolorum necessitatibus eos expedita cupiditate quasi quis, saepe
+            provident cum labore nobis veniam odio aperiam dolorem dolores vero.
+            Reiciendis, soluta maiores.</q
+          >
+        </div>
+      </div>
+      <div class="owl-content">
+        <img
+          src="https://picsum.photos/200?random=2"
+          alt="photos"
+          style="width: 150px; height: 150px"
+        />
+        <div class="owl-items">
+          <h2 class="heading">Person 2</h2>
+          <h3 class="heading">Title</h3>
+          <q
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+            dolorum necessitatibus eos expedita cupiditate quasi quis, saepe
+            provident cum labore nobis veniam odio aperiam dolorem dolores vero.
+            Reiciendis, soluta maiores.</q
+          >
+        </div>
+      </div>
+      <div class="owl-content">
+        <img
+          src="https://picsum.photos/200?random=3"
+          alt="photos"
+          style="width: 150px; height: 150px"
+        />
+        <div class="owl-items">
+          <h2 class="heading">Person 3</h2>
+          <h3 class="heading">Title</h3>
+          <q
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+            dolorum necessitatibus eos expedita cupiditate quasi quis, saepe
+            provident cum labore nobis veniam odio aperiam dolorem dolores vero.
+            Reiciendis, soluta maiores.</q
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Script tags under here -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 50,
+          loop: true,
+          stagePadding: 100,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1,
+              stagePadding: 0,
+            },
+            500: {
+              items: 1,
+              margin: 50,
+              stagePadding: 100,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
